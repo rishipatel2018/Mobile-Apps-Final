@@ -10,12 +10,12 @@
       defer
     ></script>
     <style type="text/css">
-      /* Set the size of the div element that contains the map */
+     
       #map {
         height: 400px;
-        /* The height is 400 pixels */
+    
         width: 100%;
-        /* The width is the width of the web page */
+       
       }
       #title, #location, #gps-location{
   font-size: large;
@@ -58,23 +58,21 @@ input[type=button] {
   </head>
   <body>
     <div class="center">
-        <h1>Property</h1>
+        <h1>Location</h1>
         <hr class="solid">
     
         <label id="t1" style="font-weight: bold;" >Title:</label><br>
         <label id="title" >Title:</label><br>
         <label id="t2" style="font-weight: bold;">Location:</label><br>
         <label id="location" >Location:</label><br>
-        <label id="t3" style="font-weight: bold;">GPS-Location:</label><br>
-        <label id="gps-location" >GPS-Location:</label><br>
-        <input type="button" id="buttonAddFavourite"  value="Add To Favorite">
+               <input type="button" id="buttonAddFavourite"  value="Add To Favorite">
     
         </div>
     
         <div id="loading">
             <img id="loading-image" src="../img/loading.gif" alt="Loading..." />
         </div>
-    <!--The div element for the map -->
+    
     <div id="map"></div>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
     <script  src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
