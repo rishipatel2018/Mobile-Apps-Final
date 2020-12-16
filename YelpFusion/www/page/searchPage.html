@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+
+
+    <title>Search</title>
+</head>
+<body id="deviceready">
+
+    <div class="center">
+    <h1>Search</h1>
+    <hr class="solid">
+
+
+    <input type="text" placeholder="Search" id="search" name="search" required >
+    <input type="button" id="buttonFavourite"  value="FAVORITE">
+
+    <input type="text" placeholder="Location" id="searchLocation" name="searchLocation" required >
+    <input type="button" id="buttonSearch"  value="SEARCH">
+
+    <ul id="propertyList" style="list-style-type:none;"></ul>
+
+    </div>
+
+    <div id="loading">
+        <img id="loading-image" src="../img/loading.gif" alt="Loading..." />
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-functions.js"></script>
+    
+    <script src="../js/searchPage.js"></script>
+
+    
+
+</body>
+</html>

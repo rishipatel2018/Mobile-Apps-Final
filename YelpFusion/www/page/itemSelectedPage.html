@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    
+    <title>Item</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTDwNr-196dj9zQrZPl2PbnJ2E0IKviPM&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+      #title, #location, #gps-location{
+  font-size: large;
+}
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+    text-align: center;
+  }
+
+input[type=button] {
+    width: 100%;
+    background-color: #839b97;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline;
+  }
+
+  h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+    </style>
+   
+  </head>
+  <body>
+    <div class="center">
+        <h1>Property</h1>
+        <hr class="solid">
+    
+        <label id="t1" style="font-weight: bold;" >Title:</label><br>
+        <label id="title" >Title:</label><br>
+        <label id="t2" style="font-weight: bold;">Location:</label><br>
+        <label id="location" >Location:</label><br>
+        <label id="t3" style="font-weight: bold;">GPS-Location:</label><br>
+        <label id="gps-location" >GPS-Location:</label><br>
+        <input type="button" id="buttonAddFavourite"  value="Add To Favorite">
+    
+        </div>
+    
+        <div id="loading">
+            <img id="loading-image" src="../img/loading.gif" alt="Loading..." />
+        </div>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+    <script src="../js/itemSelectedPage.js"></script>
+  </body>
+</html>
